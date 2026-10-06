@@ -1,0 +1,26 @@
+[project]
+name = "photo-service"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rawnakjain", email = "raunakpugalia27@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.104",
+    "google-genai>=2.0",
+    "pillow>=10.0",
+    "pydantic>=2.5",
+    "pymongo>=4.6",
+    "python-dotenv>=1.0",
+    "python-multipart>=0.0.6",
+    "uvicorn[standard]>=0.24",
+]
+
+[project.scripts]
+photo-service = "photo_service:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
